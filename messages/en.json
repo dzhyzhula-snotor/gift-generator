@@ -1,0 +1,88 @@
+{
+  "header": {
+    "logo": "Darunok",
+    "about": "About"
+  },
+  "form": {
+    "title": "Find the perfect gift",
+    "subtitle": "Fill in the details — AI will find ideas tailored to this person",
+    "gender": {
+      "label": "Gender",
+      "male": "Male",
+      "female": "Female",
+      "any": "Any"
+    },
+    "ageGroup": {
+      "label": "Age",
+      "0-12": "0–12 years",
+      "13-17": "13–17 years",
+      "18-35": "18–35 years",
+      "35-60": "35–60 years",
+      "60+": "60+ years"
+    },
+    "budget": {
+      "label": "Budget",
+      "under-300": "under 300 UAH",
+      "300-1000": "300–1000 UAH",
+      "1000-3000": "1000–3000 UAH",
+      "3000+": "3000+ UAH"
+    },
+    "occasion": {
+      "label": "Occasion",
+      "birthday": "Birthday",
+      "new-year": "New Year",
+      "wedding": "Wedding",
+      "march-8": "March 8",
+      "feb-14": "Valentine's Day",
+      "graduation": "Graduation",
+      "just-because": "Just because"
+    },
+    "relationship": {
+      "label": "Your relationship",
+      "mom": "Mom",
+      "dad": "Dad",
+      "friend": "Friend",
+      "partner": "Partner",
+      "colleague": "Colleague",
+      "child": "Child",
+      "grandparent": "Grandparent"
+    },
+    "interests": {
+      "label": "Hobbies & Interests",
+      "sports": "🏃 Sports",
+      "cooking": "🍳 Cooking",
+      "gaming": "🎮 Gaming",
+      "music": "🎵 Music",
+      "reading": "📚 Reading",
+      "travel": "✈️ Travel",
+      "tech": "💻 Tech",
+      "crafts": "🎨 Crafts",
+      "movies": "🎬 Movies"
+    },
+    "personality": {
+      "label": "Personality",
+      "active": "Active",
+      "calm": "Calm",
+      "creative": "Creative",
+      "practical": "Practical"
+    },
+    "giftType": {
+      "label": "Gift type",
+      "physical": "🎁 Physical",
+      "experience": "🎭 Experience",
+      "digital": "📱 Digital"
+    },
+    "submit": "Find gift ideas",
+    "submitting": "Searching ideas..."
+  },
+  "results": {
+    "title": "Gift ideas",
+    "findOnRozetka": "Find on Rozetka",
+    "tryAgain": "Try again",
+    "error": "Something went wrong. Please try again."
+  },
+  "about": {
+    "title": "About",
+    "description": "Darunok is a free AI-powered gift idea generator. Just enter details about the recipient and we'll suggest personalized ideas with links to Rozetka search."
+  }
+}
