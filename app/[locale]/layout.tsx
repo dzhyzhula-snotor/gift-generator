@@ -11,9 +11,21 @@ const poiretOne = Poiret_One({
   display: 'swap',
 })
 
-export const metadata: Metadata = {
-  title: 'Дарунок — ідеальний подарунок за 30 секунд',
-  description: 'Генератор ідей для подарунків з AI. Введи параметри — отримай персоналізовані ідеї з посиланнями на Rozetka.',
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}): Promise<Metadata> {
+  const { locale } = await params
+  const isUk = locale === 'uk'
+  return {
+    title: isUk
+      ? 'Дарунок — ідеальний подарунок за 30 секунд'
+      : 'Darunok — perfect gift in 30 seconds',
+    description: isUk
+      ? 'Генератор ідей для подарунків з AI. Введи параметри — отримай персоналізовані ідеї з посиланнями на Rozetka.'
+      : 'AI gift idea generator. Enter recipient details — get personalized ideas with Rozetka links.',
+  }
 }
 
 export default async function LocaleLayout({
@@ -24,7 +36,7 @@ export default async function LocaleLayout({
   params: Promise<{ locale: string }>
 }) {
   const { locale } = await params
-  const messages = await getMessages()
+  const messages = await getMessages({ locale })
   return (
     <html lang={locale} className={poiretOne.variable}>
       <body>
