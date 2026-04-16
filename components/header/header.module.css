@@ -1,0 +1,69 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(10, 10, 10, 0.8);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  background: linear-gradient(135deg, var(--color-accent-start), var(--color-accent-end));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navLink {
+  font-size: 14px;
+  color: var(--color-text-muted);
+  transition: color var(--transition);
+}
+
+.navLink:hover {
+  color: var(--color-text);
+}
+
+.langSwitch {
+  display: flex;
+  gap: 4px;
+}
+
+.langBtn {
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  transition: all var(--transition);
+}
+
+.langBtn[data-active='true'] {
+  background: var(--color-surface);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+}
+
+.langBtn:hover:not([data-active='true']) {
+  color: var(--color-text);
+}
