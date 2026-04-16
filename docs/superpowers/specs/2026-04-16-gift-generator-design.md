@@ -111,6 +111,10 @@ Gemini API — генерує 6 ідей у JSON
 - **Анімації** — skeleton loader поки AI думає, stagger появи карток (Framer Motion)
 - **Мобілка** — форма в один стовпець, картки в один стовпець
 
+### Типографіка
+- **Шрифт:** `Poiret One` (Google Fonts) — для заголовків і акцентних елементів
+- Підключається через `next/font/google`
+
 ### CSS Variables (глобальні токени)
 ```css
 --color-bg: #0a0a0a;
