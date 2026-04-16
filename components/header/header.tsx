@@ -1,29 +1,27 @@
 'use client'
 import Link from 'next/link'
 import { useLocale, useTranslations } from 'next-intl'
-import { usePathname, useRouter } from 'next/navigation'
+import { useRouter, usePathname } from '@/i18n/routing'
 import styles from './header.module.css'
 
 export function Header() {
   const t = useTranslations('header')
   const locale = useLocale()
-  const pathname = usePathname()
   const router = useRouter()
+  const pathname = usePathname()
 
   function switchLocale(newLocale: string) {
-    const segments = pathname.split('/')
-    segments[1] = newLocale
-    router.push(segments.join('/'))
+    router.replace(pathname, { locale: newLocale })
   }
 
   return (
     <header className={styles.header}>
       <div className={styles.inner}>
-        <Link href={`/${locale}`} className={styles.logo}>
+        <Link href="/" className={styles.logo}>
           {t('logo')}
         </Link>
         <nav className={styles.nav}>
-          <Link href={`/${locale}/about`} className={styles.navLink}>
+          <Link href="/about" className={styles.navLink}>
             {t('about')}
           </Link>
           <div className={styles.langSwitch}>
